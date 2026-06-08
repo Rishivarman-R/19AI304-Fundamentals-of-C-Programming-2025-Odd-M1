@@ -26,7 +26,28 @@ To build a C program that prints integer, float,character, and string literals o
 ### Step 4: 
    Stop
 # Program:
+
+~~~
+#include <stdio.h>
+
+int main() {
+    int number = 10;
+    float price = 25.5;
+    char letter = 'C';
+    char text[] = "Welcome to C";
+    printf("Integer value: %d\n", number);
+    printf("Float value: %.1f\n", price);
+    printf("Character value: %c\n", letter);
+    printf("String value: %s\n", text);
+
+    return 0;
+}
+~~~
+
 # Output:
+
+<img width="589" height="381" alt="image" src="https://github.com/user-attachments/assets/35aed734-eefc-465f-90a1-c4fe31df576c" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -57,7 +78,19 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 6:  
   Stop
 # Program:
+~~~
+#include <stdio.h>
+#define MAX 100
+int main() {
+    const int MIN = 10;
+    printf("Macro constant MAX = %d\n", MAX);
+    printf("Constant variable MIN = %d\n", MIN);
+    return 0;
+}
+~~~
 # Output:
+<img width="530" height="323" alt="image" src="https://github.com/user-attachments/assets/cdcaa29b-f068-4e9c-90e4-2637b4095b35" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -81,8 +114,27 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 5:    
    Stop
 # Program:
+~~~
+#include <stdio.h>
+int main() {
+    int count = 10;           
+    float price = 25.75f;     
+    double distance = 123.456; 
+    char grade = 'A';         
+    printf("Integer value: %d\n", count);
+    printf("Float value: %.2f\n", price);
+    printf("Double value: %.3lf\n", distance);
+    printf("Character value: %c\n", grade);
+    return 0;
+}
+~~~
 # Output:
+
+<img width="564" height="411" alt="image" src="https://github.com/user-attachments/assets/746b875f-c486-4347-8366-01a1b6e41abb" />
+
 # Result: 
+
+Thus, the program was implemented and executed successfully, and the required output was obtained.
 
 # 19AI304-Fundamentals-of-C-Programming-2025-Odd
 # IAPR-1- Module 1 - FoC
@@ -120,7 +172,39 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+```
+#include <stdio.h>
+
+int main() {
+    int a, b;
+    printf("Enter two integers: ");
+    scanf("%d %d", &a, &b);
+    printf("\nArithmetic Operations:\n");
+    printf("Addition (a + b): %d\n", a + b);
+    printf("Subtraction (a - b): %d\n", a - b);
+    printf("Multiplication (a * b): %d\n", a * b);
+
+    if (b != 0) {
+        printf("Division (a / b): %d\n", a / b);
+        printf("Remainder (a %% b): %d\n", a % b);
+    } else {
+        printf("Division and Remainder not possible (division by zero)\n");
+    }
+    printf("\nBitwise Operations:\n");
+    printf("AND (a & b): %d\n", a & b);
+    printf("OR (a | b): %d\n", a | b);
+    printf("XOR (a ^ b): %d\n", a ^ b);
+    printf("Left Shift (a << 1): %d\n", a << 1);
+    printf("Right Shift (a >> 1): %d\n", a >> 1);
+    printf("NOT (~a): %d\n", ~a);
+
+    return 0;
+}
+```
 # Output:
+
+<img width="416" height="589" alt="image" src="https://github.com/user-attachments/assets/ab45cc95-fd61-4248-9944-3f1359e27a29" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -146,7 +230,7 @@ Thus, the program was implemented and executed successfully, and the required ou
    
    If false → Go to Step 5.
    
-### Step 5:    
+### Step 5: 
    Check if ch is an alphabet letter ('A' - 'Z' or 'a' – 'z').
    
    If true → Go to Step 6.
@@ -165,7 +249,29 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+
+~~~
+#include <stdio.h>
+int main() {
+    char ch;
+    printf("Enter a character: ");
+    scanf("%c", &ch);
+    (ch >= '0' && ch <= '9') ?
+        printf("The character is a Digit.\n") :
+    ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')) ?
+        ((ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U' ||
+          ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') ?
+            printf("The character is a Vowel.\n") :
+            printf("The character is a Consonant.\n")) :
+        printf("The character is a Special Symbol.\n");
+    return 0;
+}
+~~~
 # Output:
+
+<img width="538" height="299" alt="image" src="https://github.com/user-attachments/assets/6383108d-f790-449e-8122-087a9084c6eb" />
+
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
